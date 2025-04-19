@@ -1,0 +1,99 @@
+%Packages
+\documentclass[a4paper, 12pt]{article}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsfonts,amsthm}
+\usepackage{hyperref}
+%\usepackage{apacite}
+\usepackage{apacite}
+\usepackage[scaled]{uarial}
+\usepackage{soul}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{booktabs}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+%Plot
+\usepackage{pgfplots}
+
+
+
+%Header
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+
+%Layout
+\usepackage
+[
+      a4paper,
+        left=6cm,
+        right=1.5cm,
+        top=2cm,
+        bottom=1cm, headsep =0.5767cm, headheight = 15pt
+]
+{geometry}
+
+%Mathe Definitionen
+\theoremstyle{Proposition}
+\newtheorem{Proposition}{Proposition}
+\newtheorem*{Beweis}{Beweis}
+
+%Spacing
+\usepackage{setspace}
+\onehalfspacing
+
+%Titel etc
+\title{Titel}
+\author{Kandidat}
+
+%Table of content
+
+
+%Dokumentenbeginn
+
+\begin{document}
+\pagenumbering{gobble}
+\newgeometry{left=1.5cm, right=1.5cm, top=2cm, bottom=1cm, headsep =0.5767cm, headheight = 15pt}
+\include{Titelblatt}
+\restoregeometry
+
+\pagebreak
+\tableofcontents
+\pagebreak
+
+\pagenumbering{arabic}
+\input{content}
+\pagebreak
+
+
+
+
+%Bibliographie
+\pagenumbering{roman}
+\pagebreak
+\bibliographystyle{apacite}
+\bibliography{literature}\label{Literatur}
+\pagebreak
+
+\appendix
+\phantomsection
+\input{appendix}
+
+
+
+\pagebreak
+
+%Eidesstatt
+\input{Eidesstatt}
+\pagebreak
+\input{Danksagung}
+
+
+
+
+\end{document}
