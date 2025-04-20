@@ -1,0 +1,59 @@
+\section{Mathematical Appendix}
+
+
+
+
+
+
+\section{Additional Text}
+
+
+\subsubsection{Rechenbeispiel unvollständiges Steuersystem}
+
+\label{app:rechenbeispiel_steuersystem}
+
+Zur Veranschaulichung eines unvollständigen Steuersystems wird das ursprüngliche Beispiel um eine zweite Konsumgüterdimension erweitert. Wir nehmen an, dass der Staat Konsumgut 1 nicht besteuern darf, d.\,h. \( \tau_1 = 0 \) ist exogen vorgegeben. Dies schränkt die Wahl zulässiger Allokationen ein, da für dieses Gut kein steuerlicher Keil (wedge) zwischen Grenzrate der Substitution und Grenzrate der Transformation entstehen darf. Im Gegensatz dazu kann auf Konsumgut 2 eine Steuer erhoben werden, sodass dort ein Keil entstehen darf.
+
+\textit{Nutzenfunktion:}
+\[
+U(c_1, c_2, l) = \ln(c_1) + \ln(c_2) - \frac{1}{2}l^2
+\quad \Rightarrow \quad U_{c_1} = \frac{1}{c_1}, \quad U_{c_2} = \frac{1}{c_2}, \quad U_l = -l
+\]
+
+\textit{Produktionsfunktion:}
+\[
+F(c_1, c_2, l) = c_1 + c_2 - 2l = 0
+\quad \Rightarrow \quad F_{c_1} = F_{c_2} = 1, \quad F_l = -2
+\]
+
+Damit Konsumgut 1 steuerfrei bleibt, muss für dieses Gut gelten:
+\[
+\frac{U_{c_1}}{U_l} = \frac{F_{c_1}}{F_l}
+\quad \Rightarrow \quad \frac{1}{c_1} = \frac{l}{2}
+\quad \Rightarrow \quad c_1 = \frac{2}{l}
+\]
+
+Wir wählen \( l = 1.65 \Rightarrow c_1 = \frac{2}{1.65} \approx 1.21 \).  
+Zur Einhaltung der Ressourcenbedingung:
+\[
+c_1 + c_2 = 2l = 3.3 \quad \Rightarrow \quad c_2 = 3.3 - 1.212 = 2.09
+\]
+
+Nun ergibt sich:
+\[
+U_{c_2} = \frac{1}{2.09} \approx 0.48, \quad U_l = -1.65
+\]
+
+Berechnung der impliziten Steuer auf Konsumgut 2:
+\[
+1 + \tau_2 = \frac{U_{c_2}}{U_l} \cdot \frac{F_l}{F_{c_2}} = \frac{0.48}{-1.65} \cdot (-2) \approx 0.58 \cdot 2 = 1.16
+\quad \Rightarrow \quad \tau_2 \approx 0.16
+\]
+
+Die optimale Steuer auf Gut 2 beträgt somit rund \( 16\,\% \). Diese resultiert aus der gewählten Allokation unter der Steuerrestriktion \( \tau_1 = 0 \). Das Beispiel zeigt, dass im Fall eines unvollständigen Steuersystems die zulässigen Allokationen durch zusätzliche Gleichungen eingeschränkt werden. Das gestaltet das Ramsey-Problem restrikiver, der Handlungspielraum bei der Gestaltung verzerrender Steuerkeile ist begrenzt. Das führt potenziell dazu, dass die gewählte Allokation weniger effizient ist als im Fall eines vollständigen Steuersystems. Die Implementierbarkeitsbedingung (1.9) bleibt jedoch unverändert bestehen.
+
+Die resultierende Allokation ist:
+\[
+(c_1, c_2, l) \approx (1.21, 2.09, 1.65)
+\]
+Diese erfülllt sowohl die Implementierbarkeitsbedingung (1.9) als auch die Resourcenbedingung (1.1). 

@@ -1,0 +1,184 @@
+\section{Einführung}
+
+In der wirtschaftspolitischen Debatte nimmt die Frage, wie Staaten ihre Fiskal- und Geldpolitik ausgestalten sollten, einen zentralen Platz ein. Diese Debatte rückt vor allem dann in den Vordergrund, wenn es durch Krisen und strukturellen Herausforderungen zu Haushaltsengpässen kommt. Die aktuelle Lage in Deutschland ist durch solche Krisen wie den Ukrainekrieg und dem damit einhergehenden Bedarf an Aufrüstung oder der vorausgegangenen Energiekrise betroffen. Au{\ss}erdem stellt die ökologische Transformation, der demografische Wandel und die Digitalisierung strukturelle Herausforderungen dar. Diese Entwicklungen verändern nicht nur die Ausgabestruktur des Staates, sondern werfen auch Fragen über die bisherigen Grundlagen der Finanzierung durch Besteuerung und Schuldenaufnahme sowie geldpolitischer Steuerung auf. 
+Diese Bachelorarbeit hat das Ziel aufzuzeigen, wie optimale fiskal- und geldpolitische Regeln im langfristigen Gleichgewicht und im Rahmen konjunktureller Schwankungen ausgestaltet werden sollten.
+
+Die theoretische Grundlage der Arbeit bildet das Kapitel „Optimal Fiscal and Monetary Policy“ von \cite{ChariKehoe1999} ab. Dieses bietet einen umfassenden Überblick über makroökonomische Ansätze zur optimalen Politikgestaltung. Im Vordergrund steht dabei der sogenannte Primal Approach zur optimalen Besteuerung. Dieser Ansatz wandelt das Problem der optimalen Besteuerung zu einem Optimierungsproblem mit zwei Nebenbedingungen um. Durch das Lösen des Optimierungsproblems erhält man optimale Allokationen, welche Ramsey-Allokationen genannt werden. Besonders hervorzuheben ist hier, dass ausgehend von optimalen Allokationen das Steuersystem entwickelt wird, welches diese Allokation umsetzen soll. Diese Vorgehensweise grenzt den primären Ansatz von anderen Ansätzen ab, welche direkt optimale Steuersätze unabhängig von einer vorgegebenen Allokation ermitteln.
+
+Durch die Anwendung des Primal Approach auf Fiskal- und Geldpolitik werden optimale Politikentscheidungen abgeleitet. Diese Entscheidungen betreffen die Gestaltung von Kapitalsteuern, Arbeits- und Konsumsteuern, Staatschulden und Zinsätzen. In dieser Bachelorarbeit wird aufgezeigt, weshalb Kapitalerträge im langfristigen Gleichgewicht nicht besteuert werden sollten. Au{\ss}erdem wird das Konzept des sogenannten Tax-Smoothing angewendet, bei dem Arbeits- und Konsumsteuern möglichst konstant gehalten werden, selbst dann, wenn ein Ausgabeschock die Finanzierung von zusätzlichen Einnahmen notwendig macht. Stattdessen sollte über den Konjunkturzyklus hinweg, die Steuerung der Staatschulden und staatlich gesetzte Zinssätze die Ausgabenschocks abfedern \cite{Barro1979}. Die Höhe der Zinssätze ist dabei entsprechend der Friedman Regel so zu steuern, dass die Nominalzinsen gegen null gehen \cite{Friedman1969}. Zuletzt wird durch eine beispielhafte Replikation einer Modellrechnung aus \cite{ChariKehoe1999} gezeigt, dass im langfristigen Gleichgewicht ein optimaler Steuersatz auf Kapitalbeträge null betragen sollte. 
+
+Durch die entwickelten Ergebnisse für die Politikgestaltung der Fiskal- und Geldpolitik lassen sich dann für die oben aufgeführten Krisen und strukturellen Herausforderungen Deutschlands Handlungsempfehlungen formulieren. Diese zielen darauf ab aufzuzeigen, wie der gegebene Ausgabenpfand mit möglichst geringen Verzerrungen finanziert werden kann. 
+
+\newpage
+
+\section{Theoretischer Hintergrund}
+
+\subsection{Grundbegriffe der Fiskal- und Geldpolitik} 
+
+%Überblick über Definition, Instrumente und Ziele
+
+\subsection{Einordnung in die makroökonomische Theorie} 
+
+%1. Welche Strömungen gibt es und wo ordnet sich meine Arbeit ein 
+%2. Was ist das normative Ziel?
+%3. Welche Modellannahmen sind zentral in meiner Analyse
+
+\subsection{Ramsey-Ansatz und Primal Approach}
+
+Der Ramsey-Ansatz zur optimalen Fiskalpolitik zielt darauf ab, staatliche Steuerentscheidungen so zu gestalten, dass das gesamtgesellschaftliche Wohlergehen unter der Nebenbedingung, dass der Staat seine Ausgaben über verzerrende Steuern finanzieren muss, maximiert wird. Dabei wählt der Staat \textit{ex ante} eine Steuerpolitik, während private Haushalte und Firmen \textit{ex post} rational auf diese reagieren.
+
+Der sogenannte \textit{Primal Approach}, wie er in der Literatur von Atkinson und Stiglitz (1980) entwickelt und durch Chari und Kehoe (1999) formalisiert wurde, übersetzt das Problem der optimalen Besteuerung in ein reines Allokationsproblem, es handelt sich dabei um ein Reformulierung des  Ramsey-Problems. Preise und Steuersätze erscheinen nicht direkt in der Zielfunktion, sondern nur implizit über ihren Einfluss auf das Verhalten privater Akteure. Das zentrale Resultat dieses Ansatzes besteht darin, dass die vollständige Beschreibung eines dezentralisierbaren Gleichgewichts auf zwei zentrale Nebenbedingungen reduziert werden kann: die \textit{Ressourcenrestriktion} und die \textit{Implementierbarkeitsbedingung}.
+
+\vspace{1em}
+\subsubsection{Mathematische Struktur des Ramsey-Problems}
+
+Wir betrachten eine Modellökonomie mit \( n \) Konsumgütern \( c_i \), Arbeit \( l \), und einer Produktionsfunktion \( F \), die konstante Skalenerträge erfüllt. Die Ressourcenrestriktion stellt sicher, dass alle realwirtschaftlichen Inputs mit den Outputs übereinstimmen und ist formal durch folgende Gleichung definiert:
+
+\begin{equation}
+F(c_1 + g_1, \dots, c_n + g_n, l) = 0 \tag{1.0}
+\end{equation}
+
+Ein repräsentativer Haushalt maximiert seinen Nutzen
+\begin{equation}
+\max_{c, l} \ U(c_1, \dots, c_n, l) \tag{1.1}
+\end{equation}
+
+unter der Budgetrestriktion
+\begin{equation}
+\sum_{i=1}^n p_i(1 + \tau_i)c_i = l \tag{1.2}
+\end{equation}
+
+wobei der Lohnsatz auf eins normiert ist und \( \tau_i \) die ad-valorem-Steuer auf Gut \( i \) darstellt. Aus der optimalen Konsum- und Arbeitsentscheidung des Haushalts, die sich aus der Nutzenmaximierung unter der Budgetrestriktion ergeben, folgen durch Anwendung der Lagrange-Methode die ersten Ordnungsbedingungen:
+\begin{equation}
+U_i = \alpha p_i(1 + \tau_i), \quad -U_l = \alpha \tag{1.3--1.4}
+\end{equation}
+
+Substitution in die Budgetrestriktion ergibt:
+\begin{equation}
+\sum_i p_i(1 + \tau_i)c_i = l \Rightarrow \sum_i U_i c_i = -U_l l \Rightarrow \sum_i U_i c_i + U_l l = 0 \tag{1.5}
+\end{equation} 
+
+Wir erhalten dadurch die Implementierbarkeitsbedingung (1.5), welche sicherstellt, dass die vom Staat gewählte Allokation \( (c_i, l) \) mit dem Nutzenmaximierungsverhalten der Haushalte konsistent ist. Sie ersetzt im \textit{Primal Approach} die explizite Modellierung von Preisen und Steuern durch eine verhaltensbasierte Nebenbedingung und erlaubt es, das Ramsey-Problem rein im Allokationsraum zu formulieren. Während die Implementierbarkeitsbedingung (1.5) somit die verhaltensökonomische Machbarkeit garantiert, stellt die Ressourcenbedingung (1.1) die technologische Machbarkeit sicher. Zusammen sind diese Nebenbedingungen notwendig und hinreichend, damit eine Allokation durch ein kompetitives Gleichgewicht mit Preisen und Steuern dezentralisiert werden kann.
+
+Voraussetzung für diese Dezentralisierung ist allerdings, dass die wirtschaftlichen Agenten rationale Erwartungen haben. Sie müssen in der Lage sein, die sich aus einer gegebenen Allokation implizit ergebenden Preise und Steuerkeile korrekt zu antizipieren und daraufhin ihr Verhalten optimal anzupassen. Die optimalen Steuerkeile ergeben sich dabei implizit aus den ersten Ordnungbedingungen von Haushalten und Firmen: Durch Kombination der Optimalitätsbedingungen für Konsum (1.3) und Arbeit (1.4) sowie der Bedingung für die Gewinnmaximierung der Firmen \( p = -F_c / F_l \) (1.6), lässt sich der resultierende Steuerkeil zwischen Grenznutzen und Grenzproduktivität herleiten:
+
+\begin{equation}
+1 + \tau = \frac{U_c}{U_l} \cdot \frac{F_l}{F_c} \tag{1.7}
+\end{equation} 
+
+Diese Gleichung bringt zum Ausdruck, dass die Steuer den relativen Preis verzerrt, den der Haushalt bei seiner Allokationsentscheidung wahrnimmt.
+
+Diese Eigenschaft ermöglicht es, die explizite Wahl einer Steuerstruktur zu umgehen, da es nicht erforderlich ist, zwischen verschiedenen Steuerarten wie Konsum- oder Einkommenssteuer zu unterscheiden. Entscheidend ist lediglich der daraus resultierende Steuerkeil, der das Verhalten der Haushalte beeinflusst. Diese Dezentralisierung verringert die Dimensionalität des Ramsey-Problems – gerade darin liegt die Stärke des \textit{Primal Approaches}, da die Analyse vereinfacht wird.
+
+
+
+
+\paragraph{Rechenbeispiel optimale Steuer}
+
+Zur Veranschaulichung des Ramsey-Ansatzes betrachten wir ein einfaches Beispiel mit nur einem Konsumgut \( c \), Arbeit \( l \), und den folgenden Funktionsformen:
+
+\textit{Nutzenfunktion:}
+\[
+U(c, l) = \ln(c) - \frac{1}{2}l^2 \quad \Rightarrow \quad U_c = \frac{1}{c}, \quad U_l = -l
+\]
+
+\textit{Produktionsfunktion:}
+\[
+F(c, l) = c - 2l \quad \Rightarrow \quad c = 2l, \quad F_c = 1, \quad F_l = -2
+\]
+
+Wir wählen die Werte \( c = 6 \) und \( l = 3 \), sodass die Ressourcenbedingung \( c = 2l \) erfüllt ist.
+
+Die Ableitungen lauten:
+
+\[
+U_c = \frac{1}{6}, \quad U_l = -3, \quad F_c = 1, \quad F_l = -2
+\]
+
+Die optimale Steuer ergibt sich gemä{\ss} der bekannten Formel zu:
+
+\[
+1 + \tau = \frac{U_c}{U_l} \cdot \frac{F_l}{F_c}
+= \frac{1/6}{-3} \cdot (-2) = \left(-\frac{1}{18}\right)(-2) = \frac{2}{18} = \frac{1}{9}
+\quad \Rightarrow \quad \tau = \frac{1}{9} \approx 0{,}111
+\]
+
+Es ergibt sich also eine \textit{ Konsumsteuer von rund 11\,\%}, die aus einem einfachen Beispiel resultiert. Dieses Ergebnis ist ökonomisch plausibel: Der Staat erhebt eine moderate Steuer zur Finanzierung seiner Ausgaben, während gleichzeitig die durch Steuern verursachten Verzerrungen minimiert werden.
+
+Besonders deutlich wird in diesem Beispiel der \textit{Steuerkeil} der zwischen dem Grenznutzen des Konsums und der Grenzproduktivität des entsprechenden Gutes liegt. In Abwesenheit von Steuern würde für ein effizientes Gleichgewicht gelten, dass das Verhältnis \(\frac{U_c}{U_l}\) dem Verhältnis \(\frac{F_c}{F_l}\) entspricht. Durch die Einführung der Steuer entsteht jedoch eine Abweichung, was sich im Faktor \(1 + \tau\) niederschlägt. Dieser Keil verzerrt die Entscheidung des Haushalts und ist gleichzeitig das zentrale steuerpolitische Instrument im Ramsey-Problem. Der Staat optimiert nicht die Steuer direkt, sondern den Grad der Verzerrung, den er in Kauf nimmt, um Einnahmen zu generieren.
+
+Dieses Beispiel zeigt, wie sich der Primal Approach auf die Entscheidungsebene der Allokationen konzentriert und der Steuerkeil lediglich als abgeleitete Grö{\ss}e erscheint, die zur dezentralen Umsetzung dient. 
+
+\paragraph{Unvollständiges Steuersystem}
+
+Im obigen Falle handelt es sich um ein vollständiges Steuersystems, bei dem der Staat jedes Gut besteuern darf. Ist das Steuersystem unvollständig, weil bestimmte Güter nicht besteuert werden dürfen, hat der Staat einen reduzierten Spielraum, um steuerliche Keile zu setzen. Dies macht das Ramsey-Problem restriktiver und kann zu Allokationen führen, die stärkeren Verzerrungen hervorrufen. Eine Veranschaulichung dieses Sachverhalts befindet sich im Appendix (siehe \textit{ \ref{app:rechenbeispiel_steuersystem}}  \textit{\nameref{app:rechenbeispiel_steuersystem})}
+
+
+\subsubsection{Einheitliche Besteuerung von Konsumgütern}
+
+Das klassische Ergebnis bezüglich der Analyse, ob Güter unterschiedlich oder einheitlich besteuert werden sollten, besagt, dass Notwendigkeitsgüter aufgrund geringerer Einkommenselastizität stärker besteuert werden sollten im Vergleich zu Luxusgütern. Da \cite{ChariKehoe1999}{ChariKehoe1999} jedoch von homothetischen Präferenzen ausgehen, ergibt sich ein anderes Ergebnis. Homothetische Präferenzen werden in der wohlfahrtsökonomischen Literatur häufig angenommen, da sie es ermöglichen, zentrale Ergebnisse wie die Optimalität uniformer Konsumsteuern oder geldpolitischer Regeln auf konsistente Weise abzuleiten und in unterschiedlichen Modellkontexten anzuwenden (vgl. \cite{ChariChristianoKehoe1996}).
+
+Ist die Nutzenfunktion eines Haushalts homothetisch und separierbar zwischen Konsum und Arbeit – und somit von der Form 
+\[
+U(c, l) = W(G(c), l),
+\]
+wobei \( G(c) \) eine homogene Aggregationsfunktion über Konsumgüter ist, so ergibt sich, dass optimale Konsumentscheidungen ausschließlich durch relative Preise und nicht durch das Einkommensniveau bestimmt werden. In einem solchen Fall führt jede Abweichung von uniformer Besteuerung zu einer Verzerrung der relativen Preise und damit des Konsumbündels. Eine höhere Besteuerung eines Gutes \( i \) verändert den effektiven Preis relativ zu einem anderen Gut \( j \) über das Verhältnis
+\[
+\frac{p_i (1 + \tau_i)}{p_j (1 + \tau_j)}.
+\]
+Ist \( \tau_i > \tau_j \), wird Gut \( i \) relativ verteuert, was zu einer Substitution weg von diesem Gut führt – unabhängig davon, ob es sich um ein Luxus- oder Notwendigkeitsgut handelt. Da homothetische Präferenzen keine Einkommenseffekte aufweisen, ergeben sich aus solchen steuerinduzierten Substitutionen keine wohlfahrtssteigernden Umverteilungseffekte. Stattdessen weichen Haushalte vom effizienten Konsummix ab, was zu Wohlfahrtsverlusten führt. Daher ist unter diesen Annahmen eine \textbf{uniforme Konsumsteuer} (\(\tau_i = \tau_j \quad \text{für } i = 1, \ldots, n\)) wohlfahrtsoptimal (vgl. \cite{AtkinsonStiglitz1980}).
+
+\subsubsection{indirekte Besteuerung}
+
+Eine indirekte Steuer wie zum Beispiel die Mehrwertsteuer ist eine Steuer, welche auf Güter und Dienstleistungen und nicht auf Personen oder Organisationen erhoben wird. Sie wird vom Verkäufer abgeführt, aber auf den Konsumenten abgewälzt. \cite{Samuelson}. 
+Bei der Frage wie indirekte Steuern ausgestaltet werden sollten gibt es zwei verschiedene Lehrmeinungen. Die eine argumentiert dafür differenzierte Steuern, also die unterschiedliche Besteuerung von Konsumgütern, durch einheitliche Konsumsteuern zu ersetzen. Dafür spricht zum einen die vereinfachte Administration, vor allem aber die Überzeugung, dadurch das Verhalten des Agenten weniger zu verzerren. Letzteres entspricht dem generellen Ziel der Ramsey-Logik Einnahmen möglichst verzerrungsfrei und somit ökonomisch effizient zu beschaffen. Die andere Lehrmeiung argumentiert ebenfalls damit, dass durch differenzierte Besteuerung der Wohlfahrtsverlust reduzieren liese.    \cite{AtkinsonStiglitz1972}. Die eigentliche Unterscheidung liegt dabei in der genauen Struktur der Nutzenfunktion bzw. den Präferenzannahmen. 
+
+Das klassische Resultat das auf Ramsey (1927) zurückgeht, empfiehlt differenzierte Steuersätze je nach Preiselastizität der Nachfrage. Gemäß dessen sollen Güter mit geringer Preiselastizität höher besteuert werden, um bei gegebener Staatseinnahmen das Ausmaß an verzerrungsinduziertem Wohlfahrsverlust zu minimieren. Diese Erkenntnis stammt aus einer Partialgleichgewichtsanalyse, bei der stark restriktiven Präferenzannahmen angenommen werden. Genauer wird von der Abwesenheit von Einkommenseffekten und der Unabängigkeit von Nachfragefunktionen ausgegangen. Prest (1967) hielt diese Annahmen für zu restriktiv, weshalb das Ergebnis keine praktische siginikanz aufweise. 
+
+Eine wesentliche Erweiterung dieses Ansatzes erfolgte durch Atkinson und Stiglitz (1972), die das Problem in einen allgemeinen Gleichgewichtsrahmen einbetteten. In ihrer Analyse wird die Nutzenmaximierung eines repräsentativen Haushalts mit der Steueroptimierung der Regierung kombiniert. Dabei zeigten sie, dass bei additiv separablen Präferenzen die optimalen Steuersätze nicht primär von Preiselastizitäten, sondern vielmehr von den Einkommenselastizitäten der Güter abhängen. Notwendige Güter, deren Nachfrage weniger mit dem Einkommen steigt, sollten demnach relativ stärker besteuert werden. Dieses Resultat ist im Hinblick auf den Konflikt von Gerechtigkeit und Effizienz als Maße für ein optimales Steuersystem als kritisch zu betrachen. \cite{AtkinsonStiglitz1972}. Zwar minimiert es den Wohlfahrtsverlust Notwendigkeitsgüter stärker als Luxusgüter zu besteuern, jedoch werden notwendige Gütern überprotional von Haushalten mit geringem Einkommen konsumiert was einen regressiven Verteilungseffekt darstellt. In der späteren Reflexion von Stiglitz wird betont, dass im Hinblick auf Verteilungsaspekten Güter sowohl mit nierdriger Preiselastizität als auch Güter mit niedrigeren Einkommenselastizität wie notwendige Güter nicht höher besteuert werden sollten \cite{Sitglitz, 2018}. 
+
+% Chari und Kohoe (1999) / Atkinson und Stiglitz (1980) -> Absatz schreiben, wenn Literatur gelesen. Eventuell schreiben wie Chari und Kohoe das Ergebnis von Atkinson und Stiglitz abgewandelt haben.
+
+Eine 
+% Absatz der für einheitliche Besteuerung spricht 
+
+
+
+[Alt] Ein wichtige Disskussion in der Steuerpolitik ist, ob eine einheitliche oder differenzierte Besteuerung von Konsumgütern optimal ist. Je nach Annahmen über die Nutzenfunktion ergeben sich dahingehend unterschiedliche Ergebnisse bezüglich der Optimalität der Steuersätze. 
+
+[Alt] Wenn eine Nutzenfunktion schwach separabel und homothetisch im Konsum ist, dann ist es optimal, alle Konsumgüter einheitlich (Taui = Tau) zu besteuern \cite{ChariKohoe1999}. Schwache Separabilität bedeutet dabei, dass die Grenzrate der Substitution (MRS) zwischen zwei Gütern innerhalb einer bestimmten Gütergruppe unabhängig davon ist, wie viel von Gütern außerhalb dieser Gruppe konsumiert wird \cite{Cherchye et al}. Homothethie impliziert, dass Konsumentscheidungen nur von der relativen Zusammensetzung des Konsumbündeln und nicht vom absoluten Einkommen abhängen. Die marginale Rate der Subsitution (MRS) zwischen den Gütern ist somit einkommensunabhängig \cite{AtkinsonStiglitz1980}. Unter diesen Annahmen ist jede Verzerrung in der relativen Preisstruktur ineffizient, da sie die Entscheidung der Haushalte über die Güterzusammensetzung verzerrt, ohne dabei einen fiskalischen Gewinn zu erzielen. 
+Daraus folgt das Atkinson-Stglitz Theorem, welches besagt, dass wenn eine Nutzenfunktion separabel zwischen Arbeit und Konsumgütern ist, und alle Konsumgüter die gleichen Einkommenselastizitäten aufweisen, eine einheitliche Konsumbesteuerung optimal sein wird.
+
+
+\newpage
+
+\section{Optimalität fiskalischer und monetärer Ma{\ss}nahmen}
+
+\subsection{Grundprinzipien optimaler Besteuerung} 
+
+%Formulierung des Ziels von Besteuerung -> Nicht "möglichst hohe Einnahmen", sondern Einnahmen mit möglichst geringen Verzerrungen
+
+\subsection{Kapitalbesteuerung im Steady State}
+
+\subsection{Schulden als Schockabsorber und Tax-Smoothing} %Probleme mit Formatierung + Steuerglättung statt Tax-Smoothing? 
+
+
+\subsection{Optimalität monetärer Ma{\ss}nahmen: Friedman Regel}
+
+\subsection{Interaktion von Fiskal- und Geldpolitik} 
+
+%Inflation als Werkzeug, um reale Rückzahlungswerte von Staatsschulden zu verringern und Schocks abzufedern 
+
+\newpage
+
+\section{Kritische Reflexion und politische Implikationen}
+
+\subsection{Grenzen der Modelle}
+
+\subsection{Übertragbarkeit auf reale Politik}
+
+\subsection{Bedeutung für aktuelle wirtschaftliche Debatte}
+
+\newpage
+
+\section{Fazit}
